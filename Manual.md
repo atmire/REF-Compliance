@@ -49,7 +49,7 @@ Apart from the "No Exception applicable" There are 2 different "types" of except
 ![Exception Step no dropdown](images/no-dropdown.png?raw=true "Exception Step no dropdown")
 
 As stated before, only 1 exception can be present on a single item, if a new option/explanation is set, the previous is removed.
-If, during the reviewstep or the workflow review, the exceptions step is show again, the page preselects and prefills the saved data.
+If, during the reviewstep or the workflow review, the exceptions step is shown again, the page preselects and prefills the saved data.
 
 ![Exception Step prefilled](images/prefilled.png?raw=true "Exception Step prefilled")
 
@@ -73,9 +73,9 @@ The Compliance step provides an overview of the submission's compliance with hef
 
 ### Top Section <a name="ComplianceStep-Top"></a> ###
 
-The color of the bar at the top of the page content will immediately make it clear if the item is compliant. The bar will have a green background if the submission is compliant, or a red background when a rule has been violated. 
+The color of the bar at the top of the page content will immediately make it clear if the item is compliant. The bar will have a green background if the submission is compliant, or an orange background when a rule has been violated. 
 
-If there is a violation then another red bar is shown under the top bar with a summary of the actions the submitter should perform to make the submission compliant.
+If there is a violation then another orange bar is shown under the top bar with a summary of the actions the submitter should perform to make the submission compliant.
 
 ![Compliance Step top](images/hefce-compliancestep-1.png?raw=true "Compliance Step top")
 
@@ -119,7 +119,7 @@ The workflow Compliance step provides an overview of the item's compliance with 
 
 The workflow reviewer has 2 options after reviewing the compliance step:
 
-1. Continue: Finish the compliance step and send the item to the final edit step. Note that this option might be disabled if the item is not compliant with the HEFCE policy. Collections can be configured to enforce item compliance before allowing the submission to continue.
+1. Continue: Finish the compliance step and send the item to the final edit step. **Note:** This option might be disabled if the item is not compliant with the HEFCE policies. Collections can be configured to enforce item compliance before allowing the submission to continue.
 2. Return: Return the item back to the edit step to resolve the issues found by the compliance step. 
 
 ![Compliance Workflow Step actions](images/hefce-actions.png?raw=true "Compliance Workflow Step actions")
@@ -132,7 +132,7 @@ The item compliance view allows users to perform the compliance check, as seen i
 
 ## Navigation <a name="Item-Compliance-View-Navigation"></a> ##
 
-To visit the item compliance view of an item go to it's item page and click on menu option "Item compliance" in the context menu.
+To view the item compliance view of an item the user can visit the item page and click on menu option "Item compliance" in the context menu.
 
 ![item compliance link](images/hefce-item-compliance-link.png?raw=true "item compliance link")
 
