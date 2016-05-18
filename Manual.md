@@ -13,6 +13,9 @@
 	- [Compliance Step](#Workflow-ComplianceStep)
 		- [Introduction](#Workflow-ComplianceStep-Introduction)
 		- [Actions](#Workflow-ComplianceStep-Actions)
+- [Item Compliance View](#Item-Compliance-View)
+	- [Introduction](#Item-Compliance-View-Introduction)
+	- [Navigation](#Item-Compliance-View-Navigation)
 - [Date of first compliant Open Access](#DateFOA)
 
 
@@ -110,7 +113,7 @@ Some of these values contain text *(estimated)*. These values were estimated so 
 
 ### Introduction <a name="Workflow-ComplianceStep-Introduction"></a> ###
 
-The workflow Compliance step provides an overview of the item's compliance with hefce. This step's overview contains the same information as the [submission's compliance step](#DateFOA).
+The workflow Compliance step provides an overview of the item's compliance with hefce. This step's overview contains the same information as the [submission's compliance step](#ComplianceStep).
 
 ### Actions <a name="Workflow-ComplianceStep-Actions"></a> ###
 
@@ -120,6 +123,20 @@ The workflow reviewer has 2 options after reviewing the compliance step:
 2. Return: Return the item back to the edit step to resolve the issues found by the compliance step. 
 
 ![Compliance Workflow Step actions](images/hefce-actions.png?raw=true "Compliance Workflow Step actions")
+
+# Item Compliance View <a name="Item-Compliance-View"></a> #
+
+## Introduction <a name="Item-Compliance-View-Introduction"></a> ##
+
+The item compliance view allows users to perform the compliance check, as seen in the submission's compliance step, on archived items. 
+
+## Navigation <a name="Item-Compliance-View-Navigation"></a> ##
+
+To visit the item compliance view of an item go to it's item page and click on menu option "Item compliance" in the context menu.
+
+![item compliance link](images/hefce-item-compliance-link.png?raw=true "item compliance link")
+
+**Note:** This option is only available for the submitter and members of group "REF Compliance Viewers". 
 
 # Date of first compliant Open Access <a name="DateFOA"></a> #
 
