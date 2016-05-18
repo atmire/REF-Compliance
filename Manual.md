@@ -1,4 +1,3 @@
-- [Date of first compliant Open Access](#DateFOA)
 - [Submission](#Submission)
 	- [Exception Step](#ExceptionStep)
 		- [Introduction](#ExceptionStep-Introduction)
@@ -10,14 +9,12 @@
 		- [Technical and Other Exceptions](#ComplianceStep-Technical-and-Other-Exceptions)
 		- [Requirements sections](#ComplianceStep-Requirements-sections)
 		- [REF Compliance related data](#ComplianceStep-related-data)
+- [Workflow](#Workflow)
+	- [Compliance Step](#Workflow-ComplianceStep)
+		- [Introduction](#Workflow-ComplianceStep-Introduction)
+		- [Actions](#Workflow-ComplianceStep-Actions)
+- [Date of first compliant Open Access](#DateFOA)
 
-# Date of first compliant Open Access <a name="DateFOA"></a> #
-
-A curation task to update the Date of first compliant Open Access of an item is available from the list of curation tasks for items, collections and communities.
-
-This curation task checks the embargo of an item's bitstream and updates the Date of first compliant Open Access to the end date of the embargo if the embargo has expired.
-
-The Date of first compliant Open Access is stored in metadata field refterms.dateFOA.
 
 # Submission <a name="Submission"></a> #
 
@@ -43,7 +40,7 @@ These extra fields are also configurable in the same file as where the configura
 
 Apart from the "No Exception applicable" There are 2 different "types" of exception-views.
 
-1. Deposit, Access and Technical -> These Exceptions all have subdivisions. This is shown as a dropdown box containing extra options. The helptext underneath the textarea changes depending on what option was selected.
+1. Deposit, Access and Technical Exception -> These Exceptions all have subdivisions. This is shown as a dropdown box containing extra options. The helptext underneath the textarea changes depending on what option was selected.
 2. Other Exception -> This only contains the input field where the user can fill in the explanation of the exception.
 
 ![Exception Step no dropdown](images/no-dropdown.png?raw=true "Exception Step no dropdown")
@@ -105,5 +102,29 @@ At the bottom of the page section "REF Compliance related data" shows an overvie
 
 ![Compliance Step related data](images/hefce-compliancestep-5.png?raw=true "Compliance Step related data")
 
+Some of these values contain text *(estimated)*. These values were estimated so that they could be used in the compliance check. They will receive a “real” value upon item archival or at the end of the embargo. 
 
+# Date of first compliant Open Access <a name="DateFOA"></a> #
 
+A curation task to update the Date of first compliant Open Access of an item is available from the list of curation tasks for items, collections and communities.
+
+This curation task checks the embargo of an item's bitstream and updates the Date of first compliant Open Access to the end date of the embargo if the embargo has expired.
+
+The Date of first compliant Open Access is stored in metadata field refterms.dateFOA.
+
+# Workflow <a name="Workflow"></a> #
+
+## Compliance Step <a name="Workflow-ComplianceStep"></a> ##
+
+### Introduction <a name="Workflow-ComplianceStep-Introduction"></a> ###
+
+The workflow Compliance step provides an overview of the item's compliance with hefce. This step's overview provides the same information as the [submission's compliance step](#DateFOA).
+
+### Actions <a name="Workflow-ComplianceStep-Actions"></a> ###
+
+The workflow reviewer has 2 options after reviewing the compliance step:
+
+1. Continue: Finish the compliance step and send the item to the final edit step. Note that this option might be disabled if the item is not compliant with the HEFCE policy. Collections can be configured to enforce item compliance before allowing the submission to continue.
+2. Return: Return the item back to the edit step to resolve the issues found by the compliance step. 
+
+![Compliance Workflow Step actions](images/hefce-compliancestep-5.png?raw=true "Compliance Workflow Step actions")
