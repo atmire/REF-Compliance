@@ -5,7 +5,7 @@
 		- [Introduction](#ExceptionStep-Introduction)
 		- [Exception Submission Step](#ExceptionStep-ExceptionStep)
 		- [Type dependent Submission steps](#ExceptionStep-Type-dependent-Submission-steps)
-	- [Compliance Step](#ComplianceStep)
+	- [Assessing Compliance](#ComplianceStep)
 		- [Introduction](#ComplianceStep-Introduction)
 		- [Top Section](#ComplianceStep-Top)
 		- [Technical and Other Exceptions](#ComplianceStep-Technical-and-Other-Exceptions)
@@ -94,7 +94,7 @@ If we then select one of the configured types, we can see that 2 more steps have
 
 ![Exception Step type dependent](images/type-dependent.png?raw=true "Exception Step type dependent")
 
-## Assessing Compliance Compliance <a name="ComplianceStep"></a> ##
+## Assessing Compliance <a name="ComplianceStep"></a> ##
 
 ### Introduction <a name="ComplianceStep-Introduction"></a> ###
 
