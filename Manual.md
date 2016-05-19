@@ -1,7 +1,9 @@
-- [Submission](#Submission)
-	- [Exception Step](#ExceptionStep)
+- [REF Open Access Compliance Checker for DSpace](#General-Introduction)
+- [Submitting compliant items](#Submission)
+	- [Additional Metadata](#Metadata)
+	- [Registering exceptions](#ExceptionStep)
 		- [Introduction](#ExceptionStep-Introduction)
-		- [Exception Step](#ExceptionStep-ExceptionStep)
+		- [Exception Submission Step](#ExceptionStep-ExceptionStep)
 		- [Type dependent Submission steps](#ExceptionStep-Type-dependent-Submission-steps)
 	- [Compliance Step](#ComplianceStep)
 		- [Introduction](#ComplianceStep-Introduction)
@@ -18,16 +20,38 @@
 	- [Navigation](#Item-Compliance-View-Navigation)
 - [Curation task to set Date of first compliant Open Access (FOA)](#DateFOA)
 
+# REF OA Compliance Checker for DSpace <a name="General-Introduction"></a> #
 
-# Submission <a name="Submission"></a> #
+This documentation describes tools created to assist institutions using DSpace repositories to comply with the [audit requirements for Open access in the post-2014 Research Excellence Framework (REF)](https://www.hefce.ac.uk/media/hefce/content/What,we,do/Research/infrastructure/Open,Access/Open%20access%20in%20the%20post-2014%20REF%20information%20and%20audit%20requirements%20udate.pdf). 
 
-## Exception Step <a name="ExceptionStep"></a> ##
+Try out these features through the online demonstrator at https://hefce.atmire.com
+
+# Submitting compliant items <a name="Submission"></a> #
+
+## Additional metadata <a name="Metadata"></a> ##
+
+These tools rely on the [RIOXX metadata profile and guidelines](http://rioxx.net/). In addition to the fields offered by RIOXX, following fields were added to comply with the open access requirements:
+* REF target panel
+* Date of first online publication, to be used in cases where an article is already available online before the official (print) publication date
+
+The following 3 additional fields were also added. Unlike the previous fields, these are calculated automatically by DSpace and should not be manipulated manually in a production system:
+* Date of first compliant deposit (FCD)
+* Version of first compliant deposit (version FCD)
+* Date of first compliant open access (FOA)
+
+For testing purposes, we have made it possible on https://hefce.atmire.com to manipulate these automated fields by hand. This is why the submission on the demo server includes a step that looks like this:
+
+![date manipulation for testing](images/date-manipulation-for-testing.png?raw=true "Date manipulation for testing")
+
+Even though these dates are set automatically by DSpace in a production environment, someone who is testing the functionality can use this dialog to experiment by manually setting these dates and assessing the effect on the compliance of the item.
+
+## Registering exceptions <a name="ExceptionStep"></a> ##
 
 ### Introduction <a name="ExceptionStep-Introduction"></a> ###
 
-A part of the requirements as described in the [REF information and audit requirements](https://www.hefce.ac.uk/media/hefce/content/What,we,do/Research/infrastructure/Open,Access/Open%20access%20in%20the%20post-2014%20REF%20information%20and%20audit%20requirements%20udate.pdf) encompasses the open-access policy. This open access policy enables the user to fill in exceptions as to the reason why a deposit, publication,etc shouldn't be open-access.
+A part of the requirements as described in the [REF information and audit requirements](https://www.hefce.ac.uk/media/hefce/content/What,we,do/Research/infrastructure/Open,Access/Open%20access%20in%20the%20post-2014%20REF%20information%20and%20audit%20requirements%20udate.pdf) encompasses the open-access policy. The policy defines a number of exceptions to cover cases for publications that will still be eligible for the next REF, even though they don't fully comply with all openaccess requirements. A specific step has been added to the DSpace submission process, so a user can fill in exceptions as to the reason why a deposit, publication, etc does not (fully) comply with the open access requirements.
 
-### Exception Step <a name="ExceptionStep-ExceptionStep"></a> ###
+### Exception Submission Step <a name="ExceptionStep-ExceptionStep"></a> ###
 
 An additional submission step has been added to give the user the possibility to enter these exceptions (**NOTE**:Only 1 exception can be given for a single item).
 The "Exceptions" step occurs after the upload step and contains a couple of options, based on a configuration.
@@ -55,9 +79,14 @@ If, during the reviewstep or the workflow review, the exceptions step is shown a
 
 ### Type dependent Submission steps <a name="ExceptionStep-Type-dependent-Submission-steps"></a> ###
 
-Because these exceptions don't apply to all sorts of items, a type dependency system (much like the one used in the input-forms), has been added for the submission steps.
+The DSpace submission forms have an out of the box feature to hide or show metadata fields in the describe steps, based on publication type specified at the start of the submission. This is often referred to as "type dependent submission".
+
+However, it was not yet possible to show or hide entire submission steps, based on a publication type.
+
+Because the REF OA exceptions only apply for conference and journal publications, a type dependency system has been put in place to hide the step to register exceptions and assess compliance for other publication types.
 Currently, the type-dependency is set to only show the Exceptions and Compliance step for items with rioxxterms.type "Conference Paper/Proceeding/Abstract" or "Journal Article/Review".
-Since an item that is initially created doesn't even contain this metadata field, these steps aren't show.
+
+The steps are hiddin up to the point when the publication type is defined.
 
 ![Exception Step not dependent](images/not-dependent.png?raw=true "Exception Step not dependent")
 
@@ -65,11 +94,11 @@ If we then select one of the configured types, we can see that 2 more steps have
 
 ![Exception Step type dependent](images/type-dependent.png?raw=true "Exception Step type dependent")
 
-## Compliance Step <a name="ComplianceStep"></a> ##
+## Assessing Compliance Compliance <a name="ComplianceStep"></a> ##
 
 ### Introduction <a name="ComplianceStep-Introduction"></a> ###
 
-The Compliance step provides an overview of the submission's compliance with hefce. If the submission is not compliant then this page will explain why and how the submission can be made compliant with HEFCE. 
+The Compliance submission step provides an overview of the submission's compliance with the open access policy. If the submission is not compliant then this page will explain why and how the submission can be made compliant.
 
 ### Top Section <a name="ComplianceStep-Top"></a> ###
 
