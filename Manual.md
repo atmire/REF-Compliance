@@ -124,24 +124,26 @@ The workflow reviewer has 2 options after reviewing the compliance step:
 
 ![Compliance Workflow Step actions](images/hefce-actions.png?raw=true "Compliance Workflow Step actions")
 
-# Item Compliance View <a name="Item-Compliance-View"></a> #
+# Accessing compliance information for live items <a name="Item-Compliance-View"></a> #
 
 ## Introduction <a name="Item-Compliance-View-Introduction"></a> ##
 
-The item compliance view allows users to perform the compliance check, as seen in the submission's compliance step, on archived items. 
+Compliance information is also available for live items in the repository, with a display that is similar to the one shown in the submission and workflow dialogs.
 
 ## Navigation <a name="Item-Compliance-View-Navigation"></a> ##
 
-To view the item compliance view of an item the user can visit the item page and click on menu option "Item compliance" in the context menu.
+To view the item compliance view of an item the user can visit the item page and click on menu option "Item compliance" in the "Compliance" menu.
 
 ![item compliance link](images/hefce-item-compliance-link.png?raw=true "item compliance link")
 
-**Note:** This option is only available for the submitter and members of group "REF Compliance Viewers". 
+**Note:** Access to compliance information for an item is only available to the original submitter, administrators and members of the group "REF Compliance Viewers". Users not in one of those groups, including anonymous users, are not able to access compliance information for archived items.
 
-# Date of first compliant Open Access <a name="DateFOA"></a> #
+# Curation task to set Date of first compliant Open Access (FOA) <a name="DateFOA"></a> #
 
-A curation task to update the Date of first compliant Open Access of an item is available from the list of curation tasks for items, collections and communities.
+For items that are deposited without embargo, date of first compliant open access is set immediately when the item becomes live in the repository. For items under embargo, it is necessary to wait until the embargo actually expired and the item becomes available. The date of first compliant open access is never set to a date in the future.
+
+A curation task to set the Date of first compliant Open Access of an item is available from the list of curation tasks for items, collections and communities.
 
 This curation task checks the embargo of an item's bitstream and updates the Date of first compliant Open Access to the end date of the embargo if the embargo has expired.
 
-The Date of first compliant Open Access is stored in metadata field refterms.dateFOA.
+The Date of first compliant Open Access is stored in metadata field refterms.dateFOA. This date is considered to be immutable: it should not be manipulated manually by an administrator once it is set.
