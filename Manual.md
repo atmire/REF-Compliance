@@ -13,10 +13,10 @@
 	- [Compliance Step](#Workflow-ComplianceStep)
 		- [Introduction](#Workflow-ComplianceStep-Introduction)
 		- [Actions](#Workflow-ComplianceStep-Actions)
-- [Item Compliance View](#Item-Compliance-View)
+- [Accessing compliance information for live items](#Item-Compliance-View)
 	- [Introduction](#Item-Compliance-View-Introduction)
 	- [Navigation](#Item-Compliance-View-Navigation)
-- [Date of first compliant Open Access](#DateFOA)
+- [Curation task to set Date of first compliant Open Access (FOA)](#DateFOA)
 
 
 # Submission <a name="Submission"></a> #
